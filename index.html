@@ -13,7 +13,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Produce 48 Ranker</title>
+  <title>Produce 48 Top 12 | Nunchi</title>
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <meta name="viewport" content="width=600 user-scalable=no" />
   <link rel="icon" type="image/png" href="/favicon.png">
@@ -24,8 +24,8 @@
 <body>
   <div id="top-banner">
     <img id="banner-image" src="assets/logo_white.png"/>
-    <p id="banner-title">PRODUCE 48 RANKER</p>
-    <p id="banner-subtitle">Make your own top 12!</p>
+    <p id="banner-title">PRODUCE 48 TOP 12</p>
+    <p id="banner-subtitle">¡Haz tu propio top 12!</p>
   </div>
   <div class="flex-container padded-box">
     <div>
@@ -34,7 +34,7 @@
       </div>
       <div id="table">
         <div id="table__filter-container">
-          <input id="table__filter-input" oninput="filterTrainees(event)" type="text" placeholder="Search"/>
+          <input id="table__filter-input" oninput="filterTrainees(event)" type="text" placeholder="Buscar"/>
         </div>
         <div id="table__entry-container">
           <!-- <div class="table__entry">
@@ -55,20 +55,20 @@
         <div id="filters-header"><strong>Filters</strong></div>
         <div>
           <input type="checkbox" name="show-eliminated" id="show-eliminated" onclick="showEliminatedClick(event)"/>
-          <label class="checkbox-label" for="show-eliminated">Show Eliminated (At Bottom)</label>
+          <label class="checkbox-label" for="show-eliminated">Mostrar Eliminadas (Al final de la lista)</label>
         </div>
         <div>
           <input type="checkbox" name="show-top12" id="show-top12" onclick="showTop12Click(event)"/>
-          <label class="checkbox-label" for="show-top12">Show Current Top 12</label>
+          <label class="checkbox-label" for="show-top12">Mostrar Top 12 Actual</label>
         </div>
       </div>
       <div id="sharelink-container">
         <!-- button -->
-        <input type="button" id="getlink-button" value="Get link" onclick="generateShareLink()"/>
+        <input type="button" id="getlink-button" value="Generar link" onclick="generateShareLink()"/>
         <!-- text box -->
         <input type="text" placeholder="http://" id="getlink-textbox" readonly/>
         <!-- button in text box -->
-        <input type="button" id="copylink-button" value="Copy" onclick="copyLink()"/>
+        <input type="button" id="copylink-button" value="Copiar" onclick="copyLink()"/>
       </div>
     </div>
     <div id="ranking__pyramid">
@@ -91,6 +91,15 @@
       <div class="ranking__row"></div>
     </div>
   </div>
+
+  <footer class="flex-container padded-box">
+    <div>
+      Traido por Nunchi
+    </div>
+    <div>
+      Traido por Nunchi
+    </div>
+  </footer>
 
   <!-- Load in script files -->
   <script src="scripts/csv.js"></script>
